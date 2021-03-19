@@ -3,7 +3,7 @@ import {Text,StyleSheet} from 'react-native';
 
 const Mytext = (props) => {
          const [showText,setShowText]=useState(false);
-           useEffect(() => {
+         useEffect(() => {
             const time=setInterval(()=>{
              setShowText((showText) => !showText);
               },500);
@@ -11,16 +11,13 @@ const Mytext = (props) => {
             }, []);
   return  (
   <Text style={[styles.text1,
-    // {
-    //   transform:[{rotate:'45deg'}]
-    // },
-         {display: showText ? 'none' : 'flex'}
+   {display: showText ? 'none' : 'flex'}
   ]}>{props.text}</Text>);
 };
 
 const styles = StyleSheet.create({
   text1: {
-    color: 'green',
+    color: 'blue',
     fontSize: 18,
     marginTop: 16,
     fontFamily:"sans-serif-light"

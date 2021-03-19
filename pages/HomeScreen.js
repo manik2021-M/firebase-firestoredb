@@ -22,7 +22,7 @@ const HomeScreen = (props) => {
         customClick={
           () => props.navigation.navigate('RegisterUser')
         }
-        title="Register (Add a Document)"
+        title="Register1 (Add a Document)"
       />
       <Mybutton
         title="Update (Update any Field of Document)"
